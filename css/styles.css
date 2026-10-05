@@ -404,7 +404,24 @@ nav a.current {
 
 
 /* -------------- ABOUT ---------------- */
+.photo-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #C97A3A;
+  margin: 0 auto;
+}
 
+.photo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.narrow {
+  width: 780px;
+}
 
 
 
