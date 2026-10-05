@@ -66,6 +66,9 @@ header {
 }
 
 header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px
 }
 
@@ -219,22 +222,27 @@ nav a.current {
 /* ============ STAT BAND END ================ */
 
 /* -------------- COLUMN OF CARDS ---------------- */
-.col-2 {
-  float: left;
-  width: 516px;
-  margin-right: 24px;
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-.col-3 {
-  float: left;
-  width: 336px;
-  margin-right: 24px;
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .col-4 {
-  float: left;
-  width: 246px;
-  margin-right: 24px;
+  float: none;
+  width: auto;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
 }
 
 .card {
@@ -299,6 +307,8 @@ nav a.current {
   font-weight: bold;
 }
 
+
+
 /* ============ COLUMN OF CARDS END ============== */
 
 
@@ -318,9 +328,6 @@ nav a.current {
 
 /* -------------- PRICE STRIP ---------------- */
 .tier {
-  float: left;
-  width: 232px;
-  margin-right: 24px;
   background-color: #FFFFFF;
   border: 1px solid #E6DECB;
   border-radius: 10px;
@@ -344,14 +351,7 @@ nav a.current {
 
 /* -------------- SERVICE LIST ---------------- */
 .service {
-  float: left;
-  width: 480px;
-  margin-right: 56px;
   height: 84px;
-}
-
-.service.last {
-  margin-right: 0;
 }
 
 .service-number {
