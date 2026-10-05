@@ -1,4 +1,75 @@
-/* ---------------  ------------------- */
+/* --------------- Brand Styling -------------------
+COLORS:
+dark navy #1C2B33     copper  #C97A3A      dark copper #A8622A     light copper  #F2B183
+cream     #FAF6EF     tan     #F0E9DC      gray        #5B6670     light gray    #B7C0C6
+border    #E6DECB
 
 
+---------------------------------------------------- */
 
+/* --------------- BASICS ----------------------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1C2B33;
+  background-color: #FAF6EF;
+}
+
+a {
+  color: #1C2B33; text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 0 0 18px 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0 0 14px 0;
+}
+
+h3 {
+  font-size: 19px; margin: 0 0 8px 0;
+}
+
+p {
+  margin: 0 0 14px 0;
+}
+/*================== BASICS END ==================== */
+
+/* ---------------- LAYOUT HELPERS ----------------- */
+.wrapper {
+  width: 1056px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+/* ============ LAYOUT HELPERS END ================ */
+
+
+/* --------------- HEADER AND NAV ----------------- */
+header {
+  background-color: FFFFFF;
+  border-bottom: 1px solid #E6DECB;
+  padding: 18px 0;
+}
+
+header .wrapper {
+  width: 1200px
+}
+
+header img {
+  height: 40px;
+  float: left;
+}
