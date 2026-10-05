@@ -411,9 +411,44 @@ nav a.current {
 /* ============ ABOUT END ============== */
 
 
-/* -------------- ABOUT ---------------- */
+/* -------------- FOOTER ---------------- */
+footer {
+  background-color: #1C2B33;
+  padding: 40px 0 24px 0;
+}
 
+footer img {
+  height: 34px;
+}
 
+.footer-left {
+  float: left;
+  width: 500px;
+}
 
+.footer-right {
+  float: right; width: 500px; text-align: right;
+}
 
-/* ============ ABOUT END ============== */
+.footer-right a {
+  color: #FAF6EF;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+
+.footer-small {
+  color: #b7C0C6;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #263845;
+  margin-top: 28px;
+  padding-top: 16px;
+  text-align: center;
+  color: #B7C0C6;
+  font-size: 12px;
+}
+/* ============ FOOTER END ============== */
