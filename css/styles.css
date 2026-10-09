@@ -83,6 +83,7 @@ header .button {
 
 .button:hover {
   background: #A8622A;
+  color: #FFFFFF;
 }
 
 a:hover {
@@ -203,6 +204,10 @@ nav a.current {
   color: #A8622A;
   font-weight: bold;
   font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 /* ============ HERO END ================ */
@@ -474,7 +479,6 @@ footer img {
   color: #b7C0C6;
   font-size: 13px;
   margin-top: 8px;
-  line-height: 8px;
 }
 
 .footer-bottom {
@@ -485,4 +489,11 @@ footer img {
   color: #B7C0C6;
   font-size: 12px;
 }
+/* -------------- SOCIAL ICONS ---------------- */
+.footer-right .social {
+  margin-left: 18px;
+  font-size: 22px;
+}
+/* ============ SOCIAL ICONS END ============== */
+
 /* ============ FOOTER END ============== */
