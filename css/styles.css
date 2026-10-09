@@ -81,6 +81,18 @@ header .button {
   float: right;
 }
 
+.button:hover {
+  background: #A8622A;
+}
+
+a:hover {
+  color: #A8622A;
+}
+
+nav a:hover {
+  color: #f2b183;
+}
+
 nav {
   background-color: #1C2B33;
   padding: 14px 0;
@@ -432,6 +444,10 @@ nav a.current {
 footer {
   background-color: #1C2B33;
   padding: 40px 0 24px 0;
+}
+
+footer a:hover {
+  color: #f2b183;
 }
 
 footer img {
