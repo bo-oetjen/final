@@ -8,9 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-  <link rel="icon" href="images/icons/favicon-onink.png">  
+  <link rel="icon" href="images/icons/favicon-onink.png">
 </head>
 <body>
+
   <header>
     <div class="wrapper">
       <img src="images/logos/logo.png" alt="Etch AI Consulting">
@@ -25,6 +26,14 @@
       <li><a href="pricing.html" class="current">Pricing</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+        <a href="#">More &#9662;</a>
+        <ul class="submenu">
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="casestudies.html">Case Studies</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -32,7 +41,7 @@
     <div class="wrapper">
       <div class="eyebrow">Pricing & Packages</div>
       <h1>No quotes. No "call us." Just the number.</h1>
-      <p class="lede" style="width: 700px;">
+      <p class="lede">
         Here's exactly what each engagement costs and what's included - so you can decide without a sales call.
       </p>
     </div>
@@ -41,8 +50,8 @@
   <div class="band band-white">
     <div class="wrapper">
       <div class="grid-4">
-      <div class="col-4">
-        <div class="card" style="height: 300px;">
+      <div>
+        <div class="card card-tall">
           <h3>Readiness Audit</h3>
           <div class="price">$750</div>
           <ul>
@@ -62,8 +71,8 @@
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card" style="height: 300px;">
+      <div>
+        <div class="card card-tall">
           <h3>Automation Sprint</h3>
           <div class="price">$1,500 - $3,000</div>
           <ul>
@@ -83,8 +92,8 @@
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card card-featured" style="height: 300px;">
+      <div>
+        <div class="card card-featured card-tall">
           <span class="popular">Most Popular</span>
           <h3>Core Build Out</h3>
           <div class="price">$4,000 - $9,000</div>
@@ -105,8 +114,8 @@
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card" style="height: 300px;">
+      <div>
+        <div class="card card-tall">
           <h3>Fractional Advisor</h3>
           <div class="price">$500 - $1,500</div>
           <ul>
@@ -132,17 +141,17 @@
   <div class="band band-tan">
     <div class="wrapper">
       <div class="grid-2">
-        <div class="col-2">
+        <div>
           <div class="eyebrow">Why Flat-Fee?</div>
           <h2>Not per-seat. Per outcome.</h2>
           <p>
             Most enterprise AI tools charge per employee, per month - so the price climbs every time you hire.  We charge a flat fee for the outcome, not a headcount tax.  You'll always know the number before you commit.
           </p>
         </div>
-        <div class="col-2">
-          <div class="card center" style="height: auto; margin-top: 30px;">
-            <div class="stat-number" style="color: #A8622A;">$0</div>
-            <div class="stat-label" style="color: #5b6670;">EXTRA COST WHEN YOU HIRE YOUR NEXT EMPLOYEE.</div>
+        <div>
+          <div class="card card-stat center">
+            <div class="stat-number">$0</div>
+            <div class="stat-label">EXTRA COST WHEN YOU HIRE YOUR NEXT EMPLOYEE.</div>
           </div>
         </div>
       </div>
@@ -173,7 +182,7 @@
           </p>
         </div>
       </div>
-      <p style="margin-top: 26px;">
+      <p class="cta-row">
         <a class="button" href="contact.html">Book Your Readiness Audit</a>
       </p>
     </div>
@@ -184,7 +193,7 @@
       <div class="footer-left">
         <img src="images/logos/logo-white.png" alt="Etch AI Consulting">
         <p class="footer-small">Proudly serving Cincinnati-area small businesses.</p>
-          <p class="footer-small">Regional expansion on the roadmap.</p>
+        <p class="footer-small">Regional expansion on the roadmap.</p>
       </div>
       <div class="footer-right">
         <a href="index.html">Home</a>

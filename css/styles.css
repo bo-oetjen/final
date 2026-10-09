@@ -4,7 +4,6 @@ dark navy #1C2B33     copper  #C97A3A      dark copper #A8622A     light copper 
 cream     #FAF6EF     tan     #F0E9DC      gray        #5B6670     light gray    #B7C0C6
 border    #E6DECB
 
-forcing an update due to git being down.
 ---------------------------------------------------- */
 
 /* --------------- BASICS ----------------------- */
@@ -60,7 +59,7 @@ p {
 
 /* --------------- HEADER AND NAV ----------------- */
 header {
-  background-color: FFFFFF;
+  background-color: #FFFFFF;
   border-bottom: 1px solid #E6DECB;
   padding: 18px 0;
 }
@@ -69,16 +68,10 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px
 }
 
-header img {
+header img { 
   height: 40px;
-  float: left;
-}
-
-header .button {
-  float: right;
 }
 
 .button:hover {
@@ -124,6 +117,39 @@ nav a.current {
   border-bottom: 2px solid #f2b183;
   padding-bottom: 4px;
 }
+/* Dropdown menu */
+nav .dropdown {
+  position: relative;
+}
+
+nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  padding: 8px 0;
+  background-color: #1C2B33;
+  border-top: 2px solid #f2b183;
+  text-align: left;
+  z-index: 10;
+}
+
+nav .dropdown:hover .submenu {
+  display: block;
+}
+
+nav .submenu li {
+  display: block;
+  margin: 0;
+}
+
+nav .submenu a {
+  display: block;
+  padding: 10px 16px;
+}
+
 /* ============ HEADER & NAV END ================ */
 
 /* --------------- BUTTONS ----------------- */
@@ -200,6 +226,10 @@ nav a.current {
   margin-right: 20px;
 }
 
+.cta-row {
+  margin-top: 26px;
+}
+
 .link {
   color: #A8622A;
   font-weight: bold;
@@ -251,11 +281,6 @@ nav a.current {
   gap: 24px;
 }
 
-.col-4 {
-  float: none;
-  width: auto;
-}
-
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -281,6 +306,23 @@ nav a.current {
 
 .card-small {
   height: 100px;
+}
+
+.card-tall {
+  height: 300px;
+}
+
+.card-stat {
+  height: auto;
+  margin-top: 30px;
+}
+
+.card-stat .stat-number {
+  color: #A8622A;
+}
+
+.card-stat .stat-label {
+  color: #5B6670;
 }
 
 .price {
@@ -384,7 +426,7 @@ nav a.current {
   border-radius: 8px;
 }
 
-.service-texzt {
+.service-text {
   float: left;
   width: 430px;
 }
@@ -402,6 +444,26 @@ nav a.current {
 /* ============ SERVICE END ============== */
 
 /* -------------- FAQ ---------------- */
+.faq {
+  max-width: 740px;
+}
+
+.faq-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #E6DECB;
+}
+
+.faq-item:last-child {
+  border-bottom: 0;
+}
+
+.faq-item h3 {
+  margin-bottom: 6px;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
 
 
 
@@ -411,14 +473,103 @@ nav a.current {
 
 
 /* -------------- CONTACT FORM ---------------- */
+.form-box {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECB;
+  border-radius: 12px;
+  padding: 30px;
+}
 
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5B6670;
+  margin-bottom: 6px;
+}
 
+input, textarea {
+  display: block;
+  width: 440px;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #E6DECB;
+  border-radius: 8px;
+  background-color: #FAF6EF;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 14px;
+}
 
+textarea {
+  height: 80px;
+}
+
+.contact-btn {
+  width: auto; 
+  background-color: #C97A3A; 
+  color: #FFFFFF; 
+  font-weight: bold; 
+  border: 0; 
+  padding: 12px 28px; 
+  cursor: pointer;
+}
 
 /* ============ CONTACT FORM END ============== */
 
 
 
+
+/* -------------- CASE STUDIES ---------------- */
+.case-card {
+  height: auto;
+  margin-bottom: 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #F0E9DC;
+  color: #A8622A;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.case-meta {
+  font-size: 13px;
+  color: #5B6670;
+}
+
+.case-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #A8622A;
+  margin: 16px 0 4px 0;
+}
+
+.case-result {
+  font-weight: bold;
+}
+
+.quote {
+  width: 780px;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.quote-source {
+  font-size: 14px;
+  color: #5B6670;
+}
+/* ============ CASE STUDIES END ============== */
 
 /* -------------- ABOUT ---------------- */
 .photo-circle {
