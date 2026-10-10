@@ -48,11 +48,6 @@ p {
 .wrapper {
   width: 1056px;
   margin: 0 auto;
-  overflow: hidden;
-}
-
-.clear {
-  clear: both;
 }
 /* ============ LAYOUT HELPERS END ================ */
 
@@ -207,13 +202,16 @@ nav .submenu a {
 /* ============ SECTIONS/BANDS END ================ */
 
 /* --------------- HERO  ----------------- */
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero-text {
-  float: left;
   width: 600px;
 }
 
 .hero-art {
-  float: right;
   width: 340px;
   text-align: center;
 }
@@ -244,8 +242,11 @@ nav .submenu a {
 
 
 /* --------------- STAT BAND  ----------------- */
+.stat-row {
+  display: flex;
+}
+
 .stat {
-  float: left;
   width: 240px;
   margin-right: 50px;
 }
@@ -262,7 +263,6 @@ nav .submenu a {
 }
 
 .stat-text {
-  float: left;
   width: 760px;
 }
 
@@ -287,8 +287,8 @@ nav .submenu a {
   gap: 24px;
 }
 
-.grid-3 > div:not(.card),
-.grid-4 > div:not(.card) {
+.grid-3 > div:has(> .card),
+.grid-4 > div:has(> .card) {
   display: flex;
 }
 
@@ -420,12 +420,12 @@ nav .submenu a {
 
 /* -------------- SERVICE LIST ---------------- */
 .service {
+  display: flex;
   min-height: 84px;
-  overflow: hidden;
 }
 
 .service-number {
-  float: left;
+  flex-shrink: 0;
   width: 34px;
   height: 34px;
   line-height: 34px;
@@ -438,8 +438,7 @@ nav .submenu a {
 }
 
 .service-text {
-  float: left;
-  width: 430px;
+  flex: 1;
 }
 
 .service h3 {
@@ -496,16 +495,18 @@ label {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.6px;
   color: #5B6670;
   margin-bottom: 6px;
 }
 
 input, textarea {
   display: block;
-  width: 440px;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 18px;
-  padding: 12px;
-  border: 1px solid #E6DECB;
+  padding: 12px 14px;
+  border: 1.5px solid #E6DECB;
   border-radius: 8px;
   background-color: #FAF6EF;
   font-family: 'Poppins', Arial, sans-serif;
@@ -513,7 +514,13 @@ input, textarea {
 }
 
 textarea {
-  height: 80px;
+  height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #C97A3A;
 }
 
 .contact-btn {
@@ -621,13 +628,19 @@ footer img {
   height: 34px;
 }
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer-left {
-  float: left;
   width: 500px;
 }
 
 .footer-right {
-  float: right; width: 500px; text-align: right;
+  width: 500px;
+  text-align: right;
 }
 
 .footer-right a {
@@ -644,6 +657,7 @@ footer img {
 }
 
 .footer-bottom {
+  width: 100%;
   border-top: 1px solid #263845;
   margin-top: 28px;
   padding-top: 16px;
