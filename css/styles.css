@@ -52,6 +52,11 @@ h3 {
   text-decoration: underline;
 }
 
+.thanks-band {
+  box-sizing: border-box;
+  min-height: calc(100vh - 370px);
+}
+
 p {
   margin: 0 0 14px 0;
 }
@@ -227,7 +232,7 @@ nav .submenu a {
 
 .hero-art {
   width: 340px;
-  text-align: center;
+  text-align: right;
 }
 
 .hero-art img {
@@ -489,6 +494,61 @@ nav .submenu a {
   margin-bottom: 0;
 }
 
+.faq-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-row .faq {
+  width: 740px;
+}
+
+.faq-art {
+  align-self: flex-start;
+  position: sticky;
+  top: 24px;
+}
+
+.faq-art img {
+  width: 260px;
+}
+
+details.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+details.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+details.faq-item summary h3 {
+  margin: 0;
+}
+
+details.faq-item summary::after {
+  content: "+";
+  font-size: 26px;
+  font-weight: bold;
+  color: #A8622A;
+  margin-left: 16px;
+}
+
+details.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+details.faq-item summary:hover h3 {
+  color: #A8622A;
+}
+
+details.faq-item p {
+  margin-top: 10px;
+}
+
 
 
 
@@ -605,12 +665,26 @@ textarea:focus {
 
 /* -------------- ABOUT ---------------- */
 .photo-circle {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #C97A3A;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.about-hero {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+}
+
+.about-hero .hero-art {
+  width: auto;
+}
+
+.about-hero .hero-text {
+  width: 560px;
 }
 
 .photo-circle img {
