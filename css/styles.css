@@ -44,6 +44,14 @@ h3 {
   margin: 0 0 8px 0;
 }
 
+.contact-info a {
+  color: #A8622A;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 p {
   margin: 0 0 14px 0;
 }
@@ -70,7 +78,8 @@ header .wrapper {
   align-items: center;
 }
 
-header img { 
+header img {
+  display: block;
   height: 40px;
 }
 
@@ -659,6 +668,25 @@ footer img {
   color: #b7C0C6;
   font-size: 13px;
   margin-top: 8px;
+}
+
+.footer-left .footer-small {
+  margin-bottom: 0;
+}
+
+.footer-left .footer-small + .footer-small {
+  margin-top: 2px;
+}
+
+.footer-right .footer-small a {
+  color: #b7C0C6;
+  font-weight: normal;
+  margin-left: 0;
+}
+
+.footer-right .footer-small a:hover {
+  color: #f2b183;
+  text-decoration: underline;
 }
 
 .footer-bottom {
