@@ -3,7 +3,7 @@ Final project for Web Design I (AMEC2050C): a multi-page website for Etch AI Con
 
 Live site: https://bo-oetjen.github.io/final/
 
-Validation: all 8 pages pass the W3C HTML validator, and css/styles.css passes the W3C CSS validator (Oct 10, 2026).
+Validation: all 9 pages pass the W3C HTML validator, and css/styles.css passes the W3C CSS validator (Oct 10, 2026).
 
 <!-- <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
