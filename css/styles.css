@@ -306,16 +306,6 @@ nav .submenu a {
   gap: 24px;
 }
 
-.grid-3 > div:has(> .card),
-.grid-4 > div:has(> .card) {
-  display: flex;
-}
-
-.grid-3 .card,
-.grid-4 .card {
-  flex: 1;
-}
-
 .card {
   background-color: #FFFFFF;
   border: 1px solid #E6DECB;
