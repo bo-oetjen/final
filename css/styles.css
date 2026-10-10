@@ -438,9 +438,12 @@ nav .submenu a {
 /* ============ PRICE STRIP END ============== */
 
 /* -------------- SERVICE LIST ---------------- */
+.service-grid {
+  row-gap: 16px;
+}
+
 .service {
   display: flex;
-  min-height: 84px;
 }
 
 .service-number {
